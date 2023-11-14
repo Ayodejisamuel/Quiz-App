@@ -104,8 +104,11 @@ function showSlide(n) {
     }
 }
 
+
 function next() {
+    
     showSlide(currentSlide + 1);
+    
 }
 
 function previous() {
@@ -132,7 +135,7 @@ nextButton.addEventListener("click", next);
 
 submitButton.addEventListener("click", () => {
     swal({
-        title: "Are you sure ?",
+        title: "Are You Sure! ?",
         text: "Once Submitted, you will not be able to return back!",
         icon: "warning",
         buttons: true,
