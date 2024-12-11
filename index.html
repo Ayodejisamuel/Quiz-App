@@ -1,33 +1,47 @@
- <!DOCTYPE html>
+  <!-- @format -->
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Quiz Platform</title>
-    <link rel="stylesheet" href="quiz.css" />
+    <meta charset="UTF-8" />
+    <title>Multiple Choice Quiz</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" 
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="quiz.css" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>    
+
   </head>
   <body>
-    <header class="quiz-header">
-      <h1>Modern Quiz Test Platform</h1>
-      <p class="instruction">
-        <strong>Instruction:</strong> Select the correct answer from the options below.
-        Each question carries equal marks.
-      </p>
-    </header>
+    <div>
+      <h3>MODERN QUIZ TEST PLATFORM</h3>
+      <h5>TEST YOUR IQ WITH QUESTIONS BELOW</h5>  
+           <p class="instruction">
+             Instruction: Select the correct answer from the options lettered below,
+             each questions carries equal marks
+           </p>
 
-    <main id="quiz-container">
+    </div> 
+      </div> 
+
+    <div id="quiz-container">
       <div id="quiz"></div>
-    </main>
+    </div>
 
-    <footer class="controls">
+    <div class="buttondiv">
       <button id="previous">Previous</button>
-      <button id="next">Next</button>
+      <button id="next">Next>></button>
       <button id="submit">Submit Quiz</button>
-    </footer>
+    </div>
 
-    <div id="results" class="results"></div>
+    <div style="margin: 35px auto;" id="results"></div>
 
+    <script>
+
+
+    </script>
+    
     <script src="quiz.js" type="module"></script>
   </body>
-</html>
+</html>  /** @format */
