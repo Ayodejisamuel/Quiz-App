@@ -1,219 +1,79 @@
-  /** @format */
- @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+ @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
- /* button {
-   margin-top: 48px;
-   padding: 8px;
-   background-color: powderblue;
-   border-radius: 12px;
-   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
- } */
-   
-#results {
-  padding: 3rem 0;
-}
- .slide {
-  padding-top: 50px;
-  background-color: #0014ff;
- }
- * {
-  padding: 0;
-  /* letter-spacing: .1rem; */
+body {
+  font-family: "Inter", sans-serif;
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+  background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
+  color: #333;
+  text-align: center;
+}
 
- }
- .instruction {
-   text-align: left;
-   justify-content: left;
-   margin:1rem auto;
-   margin-bottom: 3rem;
-   line-height: 1.5;
-  font-size: 18px;
-   padding-left: 40px;
-   color: #3a3a3a;
-   font-weight: bold;
- }
- 
- .subjectdiv {
-   display: flex;
-   /* flex-direction: row; */
-   flex-wrap: wrap;
-   height: 60px;
-   justify-content: space-between;
-   margin-bottom: 0px;
-   padding-left: 40px;
- }
- 
-  
- 
- #time {
-   background-color: powderblue;
-   color: #3a3a3a;
-   display: flex;
-   font-weight: 700;
- }
- 
- .slide {
-   margin-top: 25px;
-   padding-bottom: 5px;
-   background-color: whitesmoke;
-   color: #333;
-   z-index: 1;
-   opacity: 0;
-   transition: opacity 0s;
-   position: absolute;
-   top: 230px;
-   left: 0px;
-   width: 100%;
- }
+header.quiz-header {
+  padding: 2rem 1rem;
+  background-color: #1e88e5;
+  color: white;
+}
 
- #next, #previous, #submit {
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header .instruction {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#quiz-container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e88e5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+#results {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e8f5e9;
+  color: #388e3c;
   font-weight: bold;
- }
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 1rem auto;
+  display: none;
+}
 
- 
- 
- .question {
-   font-family: "Work Sans", sans-serif;
-   color: #3a3a3a;
-   text-align: left;
-  font-weight: bold;
-   padding-left: 43px;
-  
- }
- 
- .line {
-   margin-top: 10px;
- }
- 
- .answers label {
-   display: block;
-  
-   text-align: left;
-   padding-left: 40px;
- }
- 
- .buttondiv {
-   display: flex;
-   justify-content: space-around;
-   -ms-flex-order: 2;
-   margin-top: 10px;
-   width: 100%;
-   margin: auto;
-   position: absolute;
-   top: 600px;
- }
- 
- #results {
-   padding-top: 10px;
-   z-index: 1;
-   position: absolute;
-   text-align: center;
-   top: 180px;
-   color: green;
-   display: inline-block;
- }
- 
- .active-slide {
-   opacity: 1;
-   z-index: 2;
- }
- 
- button {
-   box-sizing: border-box;
-   background-color: rgba(255, 255, 255, 1);
-   color: #0014ff;
-   padding: 20px;
-   margin-left: 20px;
-   margin-right: 20px;
-   border-color: white;
-   cursor: auto;
-   border-radius: 0.25rem;
- 
-   vertical-align: middle;
-   /* background-color: #537d57; */
- }
- 
- button:hover {
-   color: rgba(255, 255, 255, 1);
-   background-color: #0014ff;
- }
- /** @format */ 
-  
- 
- .subject {
-   margin-top: 10px;
-   margin-right: 1000px;
-   text-align: left;
-   color: #3a3a3a;
-   display: inline;
-   font-size: 22px;
- }
- 
-  
- body {
-   background-color: whitesmoke;
-   font-weight: 300;
-   width: 100%;
-   text-align: center;
-   position: relative;
-   bottom: 10px;
-   line-height: 2;
-   color: #3a3a3a;
-   font-size: 20px;
- }
- 
-  
- 
- #copy {
-   padding-bottom: 20px;
-   background-color: powderblue;
-   padding-bottom: 10px;
- }
- 
- h3 {
-  padding: 1.5rem 0 0.1rem 0;
-   max-width: 80%;
-     color: #0014ff;
-  
-   /* font-size: 21px;
-   font-weight: 700; */
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-   margin: auto;
- }
- 
- h5 {
-   margin: auto;
-   max-width: 80%;
-   color: #0014ff;
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
 
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-   margin: auto;
-   
- }
- #time {
-   background-color: powderblue;
-   text-align: right;
-   color: #3a3a3a;
-   font-weight: 700;
- }
-  
- 
- .line {
-   margin-top: 10px;
- }
-  
-  
-  
-  
- 
-  
- 
- button:hover {
-   color: rgba(255, 255, 255, 1);
-   background-color: #0014ff;
- }
- 
+  button {
+    padding: 0.6rem 1rem;
+  }
+}
